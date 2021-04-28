@@ -1,0 +1,88 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input[type=text],
+input[type=email],
+select,
+label {
+  display: block;
+}
+input[type=checkbox] {
+  display: inline;
+}
+label, button {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form-cont {
+  background: url('./images/texture.png');
+  padding: 20px;
+  max-width: 60vw;
+  margin-bottom: 50px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 30px;
+    input {
+      padding: 10px 20px;
+    }
+}
+.field-cont, .checkboxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkbox-field {
+  margin-right: 10vw;
+}
+.btn-cont {
+  margin-top: 40px;
+}
+.btn {
+  border-radius: 20px;
+  padding: 5px 30px;
+  margin-right: 20px;
+}
+.submit-button {
+  background-color: darkviolet;
+  color: white;
+}
+.reset-button {
+  background-color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .checkboxes {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .form-cont {
+    max-width: 100vw;
+  }
+  .field-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-field {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+  .btn-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    :first-child {
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 10px 40px;
+    }
+  }
+}
